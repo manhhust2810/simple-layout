@@ -1,0 +1,250 @@
+.format-table {
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 30px;
+}
+
+.border-input {
+  border: none;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px 120px;
+  background-color: #1f568b;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.grid-item {
+  border-width: 1px;
+  display: grid;
+  border-style: solid;
+  grid-template-rows: 1fr 1fr 2fr 1fr 2fr;
+  border-color: rgb(201, 200, 200);
+  background: white;
+  box-sizing: border-box;
+  height: 250px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.img3 {
+  display: flex;
+  flex-wrap: nowrap;
+  grid-row-start: 3;
+  margin-left: 50px;
+}
+
+.text {
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+.my-button {
+  background-color: #1f568b;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-transform: none;
+}
+
+.my-searchbox {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 20px;
+  text-align: start;
+  line-height: 40px;
+  font-size: 15px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-transform: none;
+  color: red;
+  padding-left: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*==Style cơ bản cho website==*/
+
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/*==Style cho menu===*/
+
+#menu ul {
+  background: #1f568b;
+  list-style-type: none;
+  text-align: center;
+}
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  /* margin-left: -5px; */
+}
+#menu a {
+  text-decoration: none;
+  /* color: #fff; */
+  display: block;
+}
+#menu a:hover {
+  background: yellow;
+  color: #333;
+}
+
+/*==Dropdown Menu==*/
+.sub-menu {
+  display: none;
+  position: absolute;
+}
+#menu li {
+  position: relative;
+  /* margin-right: 0px; */
+}
+#menu li:hover .sub-menu {
+  display: block;
+}
+.sub-menu li {
+  margin-left: 0 !important;
+}
+
+/*==Menu cấp 3==*/
+.sub-menu > ul {
+  display: none !important;
+}
+
+.navlink {
+  border-radius: 18px;
+  margin-top: 7px;
+  height: 36px;
+  line-height: 36px;
+  color: white;
+}
+
+#cell {
+  border-radius: 18px;
+  margin-top: 7px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #f1f1f1;
+  padding: 12px 20px;
+  width: 200px;
+  margin-left: 0px;
+}
+
+.item-active {
+  background-color: yellow;
+  color: #8c1515;
+}
+
+.text-color-dropdown {
+  color: white;
+}
+
+.SortableHelper {
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 6px, rgba(0, 0, 0, 0.075) 0px 1px 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: row-resize;
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 900px;
+  height: 400px;
+}
+
+.table-format {
+  margin-top: 60px;
+}
+
+.foo {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  -khtml-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  padding: 10px 20px 10px 10px;
+  /* top: 250px; */
+  background-color: #5cb85c;
+  color: #fff;
+  animation: inMess 1s 1;
+  margin-top: 10px;
+  /* animation-duration: 4s; */
+  /* transition-delay: 5s; */
+}
+
+@keyframes inMess {
+  from {
+    opacity: 0;
+    right: -50px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.closeMessage {
+  position: absolute;
+  top: 10px;
+  font-size: 14px;
+  right: 10px;
+}
+
+.iconPosition {
+  margin-right: 90px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 480px) {
+}

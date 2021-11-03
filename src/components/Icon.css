@@ -1,0 +1,12 @@
+.icon1Style{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .icon1Style{
+        height: 38px;
+        width: 38px;
+    }
+}
