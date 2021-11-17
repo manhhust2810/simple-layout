@@ -8,6 +8,10 @@ BUILD SIMPLE PROJECT WITH REACT APP + REDUX + GRID LAYOUT/BOOTSTRAP 4
 
 4. BOOTSTRAP 4
 
+5. RESPONSIVE
+
+Demo: http://manhhust2810.github.io/simple-layout
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
